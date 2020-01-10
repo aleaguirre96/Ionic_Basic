@@ -1,5 +1,17 @@
-<app-encabezado titulo="alert page"></app-encabezado>
+<app-encabezado [titulo]="titulo || 'Alert Page'"></app-encabezado>
 
-<ion-content>
-    <h1>Pgina Alert</h1>
+<ion-content  class="ion-padding">
+    <h1>Ejemplos de alerta</h1>
+
+    <ion-button color= "primary"
+                expand="full" 
+                (click)="presentAlert()" >
+                Mostrar Alerta
+    </ion-button>
+
+    <ion-button color= "primary"
+                expand="full" 
+                (click)="cambiarTitulo()" >
+                Mostrar Input message
+    </ion-button>
 </ion-content>

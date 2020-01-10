@@ -15,6 +15,18 @@ const routes: Routes = [
     path: 'action-sheet',
     loadChildren: './pages/action-sheet/action-sheet.module#ActionSheetPageModule'
   },
+  {
+    path: 'avatar',
+    loadChildren: () => import('./pages/avatar/avatar.module').then( m => m.AvatarPageModule)
+  },
+  {
+    path: 'botones',
+    loadChildren: () => import('./pages/botones/botones.module').then( m => m.BotonesPageModule)
+  },
+  {
+    path: 'card',
+    loadChildren: () => import('./pages/card/card.module').then( m => m.CardPageModule)
+  },
 ];
 
 @NgModule({

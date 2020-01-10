@@ -9,7 +9,7 @@ export class InicioPage implements OnInit {
 
   componentes: Componente[] = [
     {
-      icon: 'american-football',
+      icon: 'albums',
       name: 'Action Sheet',
       redirectTo: '/action-sheet'
     },
@@ -17,6 +17,21 @@ export class InicioPage implements OnInit {
       icon: 'stopwatch',
       name: 'Alert',
       redirectTo: '/alert'
+    },
+    {
+      icon: 'contact',
+      name: 'Avatar',
+      redirectTo: '/avatar'
+    },
+    {
+      icon: 'bug',
+      name: 'Botones',
+      redirectTo: '/botones'
+    },
+    {
+      icon: 'card',
+      name: 'Cards',
+      redirectTo: '/card'
     },
   ];
 

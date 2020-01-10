@@ -4,22 +4,17 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
+import { BotonesPageRoutingModule } from './botones-routing.module';
 
-import { InicioPage } from './inicio.page';
-import { RouterModule } from '@angular/router';
+import { BotonesPage } from './botones.page';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    RouterModule.forChild([
-      {
-        path: '',
-        component: InicioPage
-      }
-    ]),
+    BotonesPageRoutingModule
   ],
-  declarations: [InicioPage]
+  declarations: [BotonesPage]
 })
-export class InicioPageModule {}
+export class BotonesPageModule {}
