@@ -1,7 +1,7 @@
 <app-encabezado titulo="Cards"></app-encabezado>
 <ion-content class="ion-padding">
 
-  <ion-card>
+  <ion-card color=primary>
     <ion-card-header>
       <ion-card-subtitle>
         Hola soy un subtitulo
@@ -15,11 +15,18 @@
     </ion-card-content>
   </ion-card>
 
-  <ion-card class="primary">
-    <ion-item>
-      <ion-icon name="pin"></ion-icon>
+  <ion-card >
+    <ion-item color="tertiary">
+      <ion-icon color="light" slot="start" name="pin"></ion-icon>
       <ion-label>Marcador</ion-label>
     </ion-item>
+    <ion-card-content>
+      Soy el contenido de este card
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-img src="/assets/shapes.svg"></ion-img>
     <ion-card-content>
       Soy el contenido de este card
     </ion-card-content>
